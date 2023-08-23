@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .page-container {
@@ -39,4 +41,78 @@
   column-gap: 20px;
   align-items: center;
   font-weight: 700;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header {
+  box-shadow: 0px 1px #d1d5db;
+  border-style: groove;
+  border-width: 0px 0px 1px 0px;
+  border-color: #9ca3af;
+}
+
+.topbar {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  height: 10vh;
+}
+
+.searchbar {
+  display: grid;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.search {
+  width: 80%;
+  border-style: none;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+.account-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.account-controls div {
+  margin-left: 15px;
+}
+
+.actionbar {
+  display: grid;
+  grid-template-columns: 4fr repeat(3, 1fr);
+}
+
+.greeting-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: fit-content;
+  margin-left: 20px;
+  font-size: 80%;
+}
+
+.profile-pic {
+  display: grid;
+  justify-content: end;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 10px
+}
+
+.projects div {
+  background-color: white;
+  width: 50px;
+  padding: 20px;
 }
