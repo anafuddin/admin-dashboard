@@ -1,4 +1,42 @@
+* {
+  margin: 0;
+}
+
 .page-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.menu img {
+  max-height: 25px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+.sidebar div {
+  margin-left: 15px;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu ul {
+  display: grid;
+  gap: 10px;
+}
+
+.menu li {
+  display: grid;
+  grid-template-columns: 25px 25px;
+  height: 25px;
+  column-gap: 20px;
+  align-items: center;
+  font-weight: 700;
 }
